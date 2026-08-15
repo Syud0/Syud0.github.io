@@ -1,0 +1,1 @@
+import{t as e}from"./goatcounter.BYddwfPE.js";for(let t of document.querySelectorAll(`[data-views]`)){let{origin:n,since:r}=t.dataset,i=t.dataset.path||location.pathname,a=t.querySelector(`[data-count]`);e(`${n}/counter/${encodeURIComponent(i)}.json?start=${r}`,e=>{a.textContent=e,a.removeAttribute(`data-pending`)}).catch(()=>{a.hasAttribute(`data-pending`)&&(t.hidden=!0)})}
