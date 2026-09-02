@@ -1,0 +1,1 @@
+import{t as e}from"./goatcounter.BYddwfPE.js";var t=document.querySelector(`.visitors`),{endpoint:n,since:r}=t?.dataset??{};if(t&&n){let i=e=>n=>{let r=t.querySelector(e);r.textContent=n,r.removeAttribute(`data-pending`)};try{await Promise.all([e(`${n}?start=week`,i(`[data-recent]`)),e(`${n}?start=${r}`,i(`[data-total]`))])}catch{t.querySelector(`[data-pending]`)&&(t.hidden=!0)}}

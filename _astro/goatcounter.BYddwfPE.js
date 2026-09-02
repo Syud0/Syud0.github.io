@@ -1,0 +1,1 @@
+async function e(e){let t=await fetch(e);if(!t.ok&&t.status!==404)throw Error(`goatcounter: ${t.status}`);return(await t.json()).count}function t(t,n){let r=`goatcounter:${t}`;try{let e=localStorage.getItem(r);e!==null&&n(e)}catch{}return e(t).then(e=>{n(e);try{localStorage.setItem(r,e)}catch{}})}export{t};
